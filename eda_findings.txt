@@ -1,0 +1,19 @@
+
+EDA FINDINGS – HOUSE PRICE DATASET
+
+1. Dataset Size: 1200 records with multiple numerical housing features.
+2. Missing Values:
+   - LotArea and TotalBsmtSF had ~5% missing values.
+   - Handled using median imputation.
+3. Distribution:
+   - SalePrice and GrLivArea showed right-skewed distributions.
+4. Outliers:
+   - Detected using IQR method.
+   - ~6–8% records flagged as outliers.
+   - Outliers capped instead of removal to preserve data size.
+5. Correlation:
+   - Strong positive correlation between SalePrice and:
+     - GrLivArea
+     - OverallQual
+6. Conclusion:
+   - Larger living area and higher quality significantly increase house prices.
